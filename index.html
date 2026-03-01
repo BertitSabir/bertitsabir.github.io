@@ -6,7 +6,19 @@
   <meta name="description" content="Sabir BERTIT — Python Backend Developer specializing in clean architecture, scalable APIs and event-driven systems.">
   <title>Sabir BERTIT — Python Backend Developer</title>
   <link rel="stylesheet" href="/assets/css/style.css">
-  <script src="https://cdn.jsdelivr.net/npm/htmx.org@1.9.12/dist/htmx.min.js" defer></script>
+  <!-- Load i18n first -->
+  <script src="/assets/js/i18n.js" defer></script>
+  <!-- Load components -->
+  <script src="/assets/js/components/hero.js" defer></script>
+  <script src="/assets/js/components/contact-bar.js" defer></script>
+  <script src="/assets/js/components/nav.js" defer></script>
+  <script src="/assets/js/components/skills.js" defer></script>
+  <script src="/assets/js/components/experience.js" defer></script>
+  <script src="/assets/js/components/education.js" defer></script>
+  <script src="/assets/js/components/about.js" defer></script>
+  <script src="/assets/js/components/contact.js" defer></script>
+  <script src="/assets/js/components/footer.js" defer></script>
+  <!-- Load app last -->
   <script src="/assets/js/app.js" defer></script>
 </head>
 <body>
@@ -14,34 +26,21 @@
 <!-- ── NAV ── -->
 <nav>
   <ul>
-    <li><a href="#skills"     data-en="Skills"      data-fr="Compétences">Skills</a></li>
-    <li><a href="#experience" data-en="Experience"   data-fr="Expériences">Experience</a></li>
-    <li><a href="#education"  data-en="Education"    data-fr="Formation">Education</a></li>
-    <li><a href="#about"      data-en="About"        data-fr="À Propos">About</a></li>
-    <li><a href="#contact"    data-en="Contact"      data-fr="Contact">Contact</a></li>
+    <li><a href="#skills">Skills</a></li>
+    <li><a href="#experience">Experience</a></li>
+    <li><a href="#education">Education</a></li>
+    <li><a href="#about">About</a></li>
+    <li><a href="#contact">Contact</a></li>
     <li class="lang-switcher">
-      <button class="lang-btn active" id="btn-en"
-              hx-get="/lang/en/content.html"
-              hx-target="#content"
-              hx-swap="innerHTML"
-              hx-on::after-request="setLang('en')">EN</button>
-      <button class="lang-btn" id="btn-fr"
-              hx-get="/lang/fr/content.html"
-              hx-target="#content"
-              hx-swap="innerHTML"
-              hx-on::after-request="setLang('fr')">FR</button>
+      <button class="lang-btn active" id="btn-en" data-lang="en">EN</button>
+      <button class="lang-btn" id="btn-fr" data-lang="fr">FR</button>
     </li>
     <li><a href="/BERTIT-SABIR-CV.pdf" target="_blank" class="nav-cv">↓ CV</a></li>
   </ul>
 </nav>
 
-<!-- ── MAIN CONTENT ──
-     Loads English content on first visit via hx-trigger="load".
-     Language buttons swap the full innerHTML of this element. ── -->
-<main id="content"
-      hx-get="/lang/en/content.html"
-      hx-trigger="load"
-      hx-swap="innerHTML">
+<!-- ── MAIN CONTENT ── -->
+<main id="content">
   <div class="page-loader">
     <div class="page-loader__spinner"></div>
   </div>
@@ -49,8 +48,7 @@
 
 <!-- ── FOOTER ── -->
 <footer>
-  <p>Sabir BERTIT · Nanterre, France · <a href="mailto:sabir-bertit@hotmail.fr">sabir-bertit@hotmail.fr</a></p>
-  <p>Built with HTML, CSS &amp; HTMX · Hosted on GitHub Pages</p>
+  <p>Loading...</p>
 </footer>
 
 </body>
