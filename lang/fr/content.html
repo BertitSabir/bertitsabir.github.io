@@ -1,0 +1,27 @@
+<!-- HERO (Français) -->
+<header class="hero">
+  <div class="hero-badge">Développeur Backend Python</div>
+  <h1>Sabir BERTIT</h1>
+  <h2>Ingénieur Backend · 9+ ans d'expérience</h2>
+  <p>
+    Passionné par la conception d'applications web où maintenabilité, scalabilité, testabilité
+    et séparation des préoccupations ne sont pas que des mots compliqués — ce sont de vraies priorités.
+    Objectif : bâtir des logiciels aussi robustes et fiables qu'un café serré le lundi matin.
+  </p>
+  <div class="hero-actions">
+    <a href="#experience" class="btn btn-primary">Voir les expériences</a>
+    <a href="/BERTIT-SABIR-CV.pdf" target="_blank" class="btn btn-outline">Télécharger le CV (PDF)</a>
+  </div>
+</header>
+
+<!-- Shared contact bar (language-neutral) -->
+<div hx-get="/components/contact-bar.html"
+     hx-trigger="load"
+     hx-swap="outerHTML"></div>
+
+<!-- Section components — each loads independently, replaced via outerHTML -->
+<div hx-get="/components/fr/skills.html"     hx-trigger="load" hx-swap="outerHTML"></div>
+<div hx-get="/components/fr/experience.html" hx-trigger="load" hx-swap="outerHTML"></div>
+<div hx-get="/components/fr/education.html"  hx-trigger="load" hx-swap="outerHTML"></div>
+<div hx-get="/components/fr/about.html"      hx-trigger="load" hx-swap="outerHTML"></div>
+<div hx-get="/components/fr/contact.html"    hx-trigger="load" hx-swap="outerHTML"></div>

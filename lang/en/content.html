@@ -1,0 +1,27 @@
+<!-- HERO (English) -->
+<header class="hero">
+  <div class="hero-badge">Python Backend Developer</div>
+  <h1>Sabir BERTIT</h1>
+  <h2>Backend Engineer · 9+ years of experience</h2>
+  <p>
+    Passionate about building web applications where maintainability, scalability, testability
+    and separation of concerns aren't just buzzwords — they're real priorities.
+    Goal: craft software as robust and reliable as a strong espresso on a Monday morning.
+  </p>
+  <div class="hero-actions">
+    <a href="#experience" class="btn btn-primary">View Experience</a>
+    <a href="/BERTIT-SABIR-CV.pdf" target="_blank" class="btn btn-outline">Download CV (PDF)</a>
+  </div>
+</header>
+
+<!-- Shared contact bar (language-neutral) -->
+<div hx-get="/components/contact-bar.html"
+     hx-trigger="load"
+     hx-swap="outerHTML"></div>
+
+<!-- Section components — each loads independently, replaced via outerHTML -->
+<div hx-get="/components/en/skills.html"     hx-trigger="load" hx-swap="outerHTML"></div>
+<div hx-get="/components/en/experience.html" hx-trigger="load" hx-swap="outerHTML"></div>
+<div hx-get="/components/en/education.html"  hx-trigger="load" hx-swap="outerHTML"></div>
+<div hx-get="/components/en/about.html"      hx-trigger="load" hx-swap="outerHTML"></div>
+<div hx-get="/components/en/contact.html"    hx-trigger="load" hx-swap="outerHTML"></div>

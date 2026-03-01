@@ -1,0 +1,283 @@
+{
+  "meta": {
+    "name": "Sabir BERTIT",
+    "title": { "en": "Python Backend Developer", "fr": "Développeur Backend Python" },
+    "subtitle": { "en": "Backend Engineer · 9+ years of experience", "fr": "Ingénieur Backend · 9+ ans d'expérience" },
+    "bio": {
+      "en": "Passionate about building web applications where maintainability, scalability, testability and separation of concerns aren't just buzzwords — they're real priorities. Goal: craft software as robust and reliable as a strong espresso on a Monday morning.",
+      "fr": "Passionné par la conception d'applications web où maintenabilité, scalabilité, testabilité et séparation des préoccupations ne sont pas que des mots compliqués — ce sont de vraies priorités. Objectif : bâtir des logiciels aussi robustes et fiables qu'un café serré le lundi matin."
+    },
+    "location": "Nanterre, France",
+    "email": "sabir-bertit@hotmail.fr",
+    "phone": "+33 751 543 929",
+    "github": "bertitsabir",
+    "cv": "/BERTIT-SABIR-CV.pdf"
+  },
+
+  "skills": [
+    {
+      "category": { "en": "Languages", "fr": "Langages" },
+      "tags": ["Python 3", "SQL / MySQL", "Golang"]
+    },
+    {
+      "category": { "en": "Frameworks & Libraries", "fr": "Frameworks & Bibliothèques" },
+      "tags": ["FastAPI", "Django", "Django REST Framework", "Faust", "Celery", "SQLAlchemy", "Asyncio"]
+    },
+    {
+      "category": { "en": "Databases & Storage", "fr": "Bases de Données & Stockage" },
+      "tags": ["PostgreSQL", "MySQL", "SQLite", "Redis", "S3", "MinIO", "MFT"]
+    },
+    {
+      "category": { "en": "Infrastructure & Messaging", "fr": "Infrastructure & Messagerie" },
+      "tags": ["Docker", "Kafka", "RabbitMQ", "Nginx", "Gunicorn", "Traefik", "Kubernetes", "Azure", "AWS"]
+    },
+    {
+      "category": { "en": "Architecture & Methodology", "fr": "Architecture & Méthodologies" },
+      "tags": ["Clean Architecture", "Hexagonal", "Microservices", "Event-Driven", "TDD", "DDD", "SOLID"]
+    },
+    {
+      "category": { "en": "Code Quality & Tooling", "fr": "Qualité de Code & Outils" },
+      "tags": ["pytest", "Ruff", "Mypy", "Bandit", "pre-commit", "uv", "pyenv", "Prefect", "Git"]
+    },
+    {
+      "category": { "en": "Auth & Security", "fr": "Auth & Sécurité" },
+      "tags": ["Keycloak", "Okta", "Auth0"]
+    },
+    {
+      "category": { "en": "Geospatial", "fr": "Géospatial" },
+      "tags": ["GeoPandas", "Spatialite", "GIS", "FTTH / FTTE"]
+    }
+  ],
+
+  "experience": [
+    {
+      "company": "Direct Assurance",
+      "domain": { "en": "Insurance", "fr": "Assurance" },
+      "role": { "en": "Senior Software Engineer", "fr": "Ingénieur Logiciel Senior" },
+      "period": { "en": "Sep 2025 – Present", "fr": "Sep 2025 – Présent" },
+      "location": "Suresnes, France",
+      "via": null,
+      "context": null,
+      "bullets": {
+        "en": [
+          "Implementing new features across microservices (Auto, Health and Home insurance)",
+          "Evolving and optimizing REST APIs exposing pricing services",
+          "Setting up and maintaining automated tests (unit, integration, load)",
+          "Ensuring code robustness, security and maintainability",
+          "Close collaboration with actuarial, QA and DevOps teams — bug analysis and performance fixes",
+          "Python performance profiling (cProfile, yappi) and OpenTelemetry instrumentation"
+        ],
+        "fr": [
+          "Implémentation de nouvelles fonctionnalités dans les microservices existants (Auto, Santé, Habitation)",
+          "Évolution et optimisation des APIs REST exposant les services de tarification",
+          "Mise en place et maintenance de tests automatisés (unitaires, intégration et de charge)",
+          "Assurance de la robustesse, sécurité et maintenabilité du code",
+          "Collaboration étroite avec les équipes actuaires, QA et DevOps — analyse et correction de bugs",
+          "Profiling Python (cProfile, yappi) et instrumentation OpenTelemetry"
+        ]
+      },
+      "stack": ["Python", "FastAPI", "Microservices", "Azure", "Databricks", "Docker", "Podman", "Asyncio", "Ruff", "uv", "Azure DevOps"]
+    },
+    {
+      "company": "Axione",
+      "domain": { "en": "FTTH · GIS", "fr": "FTTH · GIS" },
+      "role": { "en": "Python Backend Developer", "fr": "Développeur Backend Python" },
+      "period": { "en": "Jul 2022 – Jun 2025", "fr": "Juil. 2022 – Juin 2025" },
+      "location": "Malakoff, France",
+      "via": null,
+      "context": null,
+      "bullets": {
+        "en": [
+          "Built automated file-transfer solution between NAS and FTP server via Kafka event-driven architecture",
+          "Developed a FastAPI service to process GRACE THD V3 geospatial files, orchestrated with Prefect",
+          "Generated optical network components (OSP/ISP/Splices) stored on S3 with email notifications",
+          "Built a geospatial ETL syncing multiple Oracle databases concurrently (multiprocessing/multithreading)",
+          "Applied Clean & Hexagonal Architecture across multi-team codebases with SOLID principles",
+          "Enforced quality standards via pre-commit hooks: Ruff, Mypy, Bandit, PyUpgrade, GitLeaks"
+        ],
+        "fr": [
+          "Mise en place d'une solution automatisée de transfert de fichiers entre NAS et serveur FTP via Kafka",
+          "Développement d'une API FastAPI pour traiter les fichiers géospatiaux GRACE THD V3, orchestrée avec Prefect",
+          "Génération des composants du réseau optique (OSP/ISP/Splices) stockés sur S3 avec notifications e-mail",
+          "ETL géospatial synchronisant plusieurs bases de données Oracle en parallèle (multiprocessing/multithreading)",
+          "Application des architectures Clean & Hexagonale sur des projets multi-équipes avec les principes SOLID",
+          "Standardisation qualité via pre-commit hooks : Ruff, Mypy, Bandit, PyUpgrade, GitLeaks"
+        ]
+      },
+      "stack": ["Python", "FastAPI", "Django", "Kafka", "Faust", "Prefect", "GeoPandas", "Redis", "S3 / MinIO", "PostgreSQL", "Docker", "Keycloak", "Traefik"]
+    },
+    {
+      "company": "Baracoda",
+      "domain": { "en": "Health IoT", "fr": "IoT Santé" },
+      "role": { "en": "Senior Backend Developer", "fr": "Développeur Backend Sénior" },
+      "period": { "en": "Mar 2022 – Jul 2022", "fr": "Mars 2022 – Juil. 2022" },
+      "location": "Neuilly-sur-Seine, France",
+      "via": null,
+      "context": null,
+      "bullets": {
+        "en": [
+          "Developed BLE/Wi-Fi communication modules between medical IoT devices and mobile app (Python, MQTT)",
+          "Integrated REST APIs to sync medical data with cloud health platforms",
+          "Built a Django REST API for patient health data management and tracking",
+          "Migrated ORM layer from Django ORM to SQLAlchemy / Alembic",
+          "Defined API contracts for inter-service interoperability and data consistency",
+          "Unit and integration tests (pytest); code reviews with SOLID and Clean Code practices"
+        ],
+        "fr": [
+          "Développement de modules de communication BLE/Wi-Fi entre dispositifs médicaux IoT et application mobile",
+          "Intégration d'APIs REST pour la synchronisation des données médicales avec des plateformes cloud santé",
+          "Conception et développement d'une API Django REST pour la gestion des données de santé des patients",
+          "Migration de l'ORM : Django ORM → SQLAlchemy / Alembic",
+          "Définition des contrats d'API pour l'interopérabilité et la cohérence des données entre services",
+          "Tests unitaires et d'intégration (pytest) ; revues de code avec pratiques SOLID et Clean Code"
+        ]
+      },
+      "stack": ["Python", "FastAPI", "Django", "SQLAlchemy", "PostgreSQL", "AWS", "Kubernetes", "Asyncio", "Redis", "MQTT"]
+    },
+    {
+      "company": "Chronopost",
+      "domain": { "en": "Logistics", "fr": "Logistique" },
+      "role": { "en": "Backend Developer", "fr": "Développeur Backend" },
+      "period": { "en": "Jun 2019 – Dec 2021", "fr": "Juin 2019 – Déc. 2021" },
+      "location": "Paris, France",
+      "via": "Sidexia",
+      "context": {
+        "en": "TETHYS — Chronopost's customs clearance tool, tracking parcel lifecycle in communication with field tools and French Customs.",
+        "fr": "TETHYS — outil de dédouanement Chronopost, traçage du cycle de vie des colis en communication avec les outils chantier et la Douane Française."
+      },
+      "bullets": {
+        "en": [
+          "Developed and maintained TETHYS, Chronopost's customs clearance tool (Django, DRF)",
+          "Analysed parcel lifecycle business rules and reverse-engineered the legacy application",
+          "Built the return processing workflow and communication modules with French Customs",
+          "Asynchronous communication with French Customs via Celery / RabbitMQ (file exchanges)",
+          "Dockerized the project; managed staging and production deployments with Git Flow versioning",
+          "Unit tests in development; functional tests on dev and staging servers"
+        ],
+        "fr": [
+          "Développement et maintenance de TETHYS, l'outil de dédouanement Chronopost (Django, DRF)",
+          "Analyse des règles métier et du cycle de vie des colis ; rétro-engineering de l'application legacy",
+          "Développement du process de traitement des retours et des modules de communication avec la Douane",
+          "Communication asynchrone avec la Douane Française via Celery / RabbitMQ (échanges de fichiers)",
+          "Dockerisation du projet ; déploiements en avant-production et production avec Git Flow",
+          "Tests unitaires en dev ; tests fonctionnels sur serveur de dev et avant-production"
+        ]
+      },
+      "stack": ["Python", "Django", "DRF", "Celery", "RabbitMQ", "PostgreSQL", "Redis", "Docker", "Nginx", "Gunicorn", "Git Flow"]
+    },
+    {
+      "company": "570 EASI / FairInvest",
+      "domain": { "en": "SSO · SCPI", "fr": "SSO · SCPI" },
+      "role": { "en": "Python Consultant", "fr": "Consultant Python" },
+      "period": { "en": "Oct 2017 – Apr 2019", "fr": "Oct. 2017 – Avr. 2019" },
+      "location": { "en": "Marrakech, Morocco", "fr": "Marrakech, Maroc" },
+      "via": "Conexcap Technologies",
+      "context": {
+        "en": "Cross-domain SSO (group 570 EASI) and FairInvest SCPI platform (real estate investment subscription).",
+        "fr": "Cross-domain SSO (groupe 570 EASI) et plateforme SCPI FairInvest (souscription investissement immobilier)."
+      },
+      "bullets": {
+        "en": [
+          "Analysed multi-platform authentication systems and SSO architecture for the 570 EASI group",
+          "Secured communications and centralized/synchronized the shared database",
+          "Built REST APIs for the FairInvest SCPI platform (real estate investment subscription)",
+          "Integrated forms, validations and client document management",
+          "Celery task + Django Signals: computed and updated client document JSON in server cache",
+          "Unit and functional tests across both projects; mentored junior developers",
+          "Docker deployments; Nginx and Jenkins CI configuration; Ubuntu server administration"
+        ],
+        "fr": [
+          "Analyse des systèmes d'authentification et SSO multi-plateformes (groupe 570 EASI)",
+          "Sécurisation des communications et centralisation/synchronisation de la base de données",
+          "Développement d'APIs REST pour la plateforme SCPI FairInvest (souscription immobilière)",
+          "Intégration des formulaires, validations et gestion des justificatifs clients",
+          "Tâche Celery + Django Signals : calcul et MAJ du JSON des justificatifs en cache serveur",
+          "Tests unitaires et fonctionnels sur les deux projets ; accompagnement des collaborateurs juniors",
+          "Déploiements Docker ; configuration Nginx et Jenkins CI ; gestion serveur Ubuntu"
+        ]
+      },
+      "stack": ["Python", "Django", "DRF", "Celery", "Django Signals", "MySQL", "Docker", "Jenkins", "Nginx", "Gunicorn", "JavaScript", "jQuery"]
+    },
+    {
+      "company": "Trans4Orient",
+      "domain": { "en": "Transport & Logistics", "fr": "Transport & Logistique" },
+      "role": { "en": "Full Stack Web Developer", "fr": "Développeur Web Full-Stack" },
+      "period": { "en": "Jan 2016 – Oct 2017", "fr": "Jan. 2016 – Oct. 2017" },
+      "location": { "en": "Marrakech, Morocco", "fr": "Marrakech, Maroc" },
+      "via": null,
+      "context": {
+        "en": "ERP Twork — full-stack web application for managing translation projects and subcontractor workflows.",
+        "fr": "ERP Twork — application web full-stack de gestion de projets de traduction et de workflows sous-traitants."
+      },
+      "bullets": {
+        "en": [
+          "Built ERP Twork (Django/Python): full-stack platform for translation project management",
+          "Asynchronous mass email sending to subcontractors via Celery tasks",
+          "Periodic Celery task: computed resource availability and notified project managers",
+          "Developed the billing module and reporting dashboard",
+          "Built the subcontractor portal with connected workspace and account management",
+          "Unit and functional tests; Linux/Windows server management"
+        ],
+        "fr": [
+          "Développement Full-stack de l'ERP Twork (Django/Python) : gestion de projets de traduction",
+          "Envoi asynchrone en masse d'e-mails aux sous-traitants via tâche Celery",
+          "Tâche Celery périodique : calcul de disponibilité des ressources et notifications aux chefs de projet",
+          "Développement du module Facturation et du Dashboard de reporting",
+          "Plateforme d'accès sous-traitants : espace connecté avec gestion de compte",
+          "Tests unitaires et fonctionnels ; gestion des serveurs Linux/Windows"
+        ]
+      },
+      "stack": ["Python", "Django", "Celery", "MySQL", "JavaScript", "jQuery", "Ajax", "Bootstrap"]
+    }
+  ],
+
+  "education": [
+    {
+      "degree": { "en": "Engineering Degree — Computer Science & Software Development", "fr": "Diplôme d'Ingénieur — Informatique & Études et Développement" },
+      "school": "Faculté des Sciences et Techniques Gueliz",
+      "location": { "en": "Marrakech, Morocco", "fr": "Marrakech, Maroc" },
+      "years": "2012 – 2015"
+    },
+    {
+      "degree": { "en": "DEUG — Applied Mathematics", "fr": "DEUG — Mathématiques Appliquées" },
+      "school": "Faculté des Sciences, Université Ibn Zohr",
+      "location": { "en": "Agadir, Morocco", "fr": "Agadir, Maroc" },
+      "years": "2010 – 2012"
+    },
+    {
+      "degree": { "en": "Baccalauréat — Applied Mathematics", "fr": "Baccalauréat — Mathématiques Appliquées" },
+      "school": "Lycée El Massira El Khadra",
+      "location": { "en": "Tiznit, Morocco", "fr": "Tiznit, Maroc" },
+      "years": null
+    }
+  ],
+
+  "about": {
+    "languages": {
+      "label": { "en": "Languages spoken", "fr": "Langues parlées" },
+      "items": { "en": ["French", "English", "Arabic", "Amazigh"], "fr": ["Français", "Anglais", "Arabe", "Amazigh"] }
+    },
+    "interests": {
+      "label": { "en": "Interests", "fr": "Centres d'intérêt" },
+      "items": { "en": ["Sport", "Technology", "Travel", "Cinema & Anime"], "fr": ["Sport", "Technologie", "Voyage", "Cinéma & Anime"] }
+    }
+  },
+
+  "contact": {
+    "intro": {
+      "en": "Have a project in mind, a question, or just want to connect? Feel free to reach out — I'll get back to you as soon as possible.",
+      "fr": "Un projet en tête, une question ou simplement envie d'échanger ? N'hésitez pas à me contacter — je vous répondrai dès que possible."
+    },
+    "form": {
+      "formspree_id": "mgolbypy",
+      "fields": {
+        "name":    { "en": { "label": "Name",    "placeholder": "Your name" },       "fr": { "label": "Nom",     "placeholder": "Votre nom" } },
+        "email":   { "en": { "label": "Email",   "placeholder": "your@email.com" },  "fr": { "label": "E-mail",  "placeholder": "votre@email.com" } },
+        "message": { "en": { "label": "Message", "placeholder": "Your message..." }, "fr": { "label": "Message", "placeholder": "Votre message..." } }
+      },
+      "submit": { "en": "Send message →", "fr": "Envoyer →" },
+      "success": { "en": "✓ Message sent! I'll be in touch soon.", "fr": "✓ Message envoyé ! Je reviens vers vous dès que possible." },
+      "error":   { "en": "✗ Something went wrong. Please try again.", "fr": "✗ Une erreur est survenue. Veuillez réessayer." }
+    }
+  }
+}
