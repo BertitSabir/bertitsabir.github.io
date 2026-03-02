@@ -2,11 +2,11 @@ class HeroComponent {
   render() {
     const meta = {
       en: {
-        badge: "Python Backend Developer",
+        badge: "Senior Python Backend Engineer",
         subtitle: "Backend Engineer · 9+ years of experience"
       },
       fr: {
-        badge: "Développeur Backend Python",
+        badge: "Ingénieur Backend Python Senior",
         subtitle: "Ingénieur Backend · 9+ ans d'expérience"
       }
     };

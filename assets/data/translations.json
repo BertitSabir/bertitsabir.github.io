@@ -12,36 +12,24 @@
       "title": "Skills",
       "categories": [
         {
-          "name": "Languages",
-          "items": ["Python 3", "SQL / MySQL", "Golang"]
+          "name": "Python & Backend",
+          "items": ["Python", "FastAPI", "Django", "Django REST Framework", "SQLAlchemy", "SQLModel", "Alembic", "Celery", "Faust", "Asyncio"]
         },
         {
-          "name": "Frameworks & Libraries",
-          "items": ["FastAPI", "Django", "Django REST Framework", "Faust", "Celery", "SQLAlchemy", "Asyncio"]
+          "name": "Data & Storage",
+          "items": ["PostgreSQL", "MySQL", "Redis", "S3", "MinIO", "Pandas", "GeoPandas", "Numpy", "Oracle"]
         },
         {
-          "name": "Databases & Storage",
-          "items": ["PostgreSQL", "MySQL", "SQLite", "Redis", "S3", "MinIO", "MFT"]
+          "name": "Infrastructure & Cloud",
+          "items": ["Docker", "Kubernetes", "Kafka", "RabbitMQ", "Nginx", "Traefik", "Azure", "AWS"]
         },
         {
-          "name": "Infrastructure & Messaging",
-          "items": ["Docker", "Kafka", "RabbitMQ", "Nginx", "Gunicorn", "Traefik", "Kubernetes", "Azure", "AWS"]
+          "name": "Auth & API Security",
+          "items": ["OAuth2", "OpenID Connect (OIDC)", "JWT", "Rate Limiting", "Keycloak", "Okta", "Auth0"]
         },
         {
-          "name": "Architecture & Methodology",
-          "items": ["Clean Architecture", "Hexagonal", "Microservices", "Event-Driven", "TDD", "DDD", "SOLID"]
-        },
-        {
-          "name": "Code Quality & Tooling",
-          "items": ["pytest", "Ruff", "Mypy", "Bandit", "pre-commit", "uv", "pyenv", "Prefect", "Git"]
-        },
-        {
-          "name": "Auth & Security",
-          "items": ["Keycloak", "Okta", "Auth0"]
-        },
-        {
-          "name": "Geospatial",
-          "items": ["GeoPandas", "Spatialite", "GIS", "FTTH / FTTE"]
+          "name": "Architecture & Practices",
+          "items": ["Microservices", "Clean Architecture", "Hexagonal", "Event-Driven", "DDD", "SOLID", "Design Patterns", "TDD"]
         }
       ]
     },
@@ -131,17 +119,17 @@
         },
         {
           "company": "Trans4Orient",
-          "domain": "Transport & Logistics",
+          "domain": "Translation",
           "role": "Full Stack Web Developer",
           "period": "Jan 2016 – Oct 2017",
           "location": "Marrakech, Morocco",
           "bullets": [
-            "Built ERP Twork (Django/Python): full-stack platform for translation project management",
-            "Asynchronous mass email sending to subcontractors via Celery tasks",
-            "Periodic Celery task: computed resource availability and notified project managers",
-            "Developed the billing module and reporting dashboard",
-            "Built the subcontractor portal with connected workspace and account management",
-            "Unit and functional tests; Linux/Windows server management"
+            "Built Twork ERP (Django/Python): integrated platform covering project management, HR and billing for a translation company",
+            "Domain analysis, technical documentation and development/deployment planning following Agile methodology",
+            "Asynchronous mass email sending to subcontractors for task proposals via Celery",
+            "Periodic Celery task: computed internal resource availability and notified project managers",
+            "Built subcontractor portal with connected workspace and account management",
+            "Billing module and activity reporting dashboard"
           ],
           "stack": ["Python", "Django", "Celery", "MySQL", "JavaScript", "jQuery", "Ajax", "Bootstrap"]
         }
@@ -155,6 +143,18 @@
           "school": "Faculté des Sciences et Techniques Gueliz",
           "location": "Marrakech, Morocco",
           "years": "2012 – 2015"
+        },
+        {
+          "degree": "DEUG — Applied Mathematics",
+          "school": "Faculté des Sciences, Université Ibn Zohr",
+          "location": "Agadir, Morocco",
+          "years": "2010 – 2012"
+        },
+        {
+          "degree": "Baccalauréat — Applied Mathematics",
+          "school": "Lycée El Massira El Khadra",
+          "location": "Tiznit, Morocco",
+          "years": null
         }
       ]
     },
@@ -207,36 +207,24 @@
       "title": "Compétences",
       "categories": [
         {
-          "name": "Langages",
-          "items": ["Python 3", "SQL / MySQL", "Golang"]
+          "name": "Python & Backend",
+          "items": ["Python", "FastAPI", "Django", "Django REST Framework", "SQLAlchemy", "SQLModel", "Alembic", "Celery", "Faust", "Asyncio"]
         },
         {
-          "name": "Frameworks & Bibliothèques",
-          "items": ["FastAPI", "Django", "Django REST Framework", "Faust", "Celery", "SQLAlchemy", "Asyncio"]
+          "name": "Données & Stockage",
+          "items": ["PostgreSQL", "MySQL", "Redis", "S3", "MinIO", "Pandas", "GeoPandas", "Numpy", "Oracle"]
         },
         {
-          "name": "Bases de Données & Stockage",
-          "items": ["PostgreSQL", "MySQL", "SQLite", "Redis", "S3", "MinIO", "MFT"]
+          "name": "Infrastructure & Cloud",
+          "items": ["Docker", "Kubernetes", "Kafka", "RabbitMQ", "Nginx", "Traefik", "Azure", "AWS"]
         },
         {
-          "name": "Infrastructure & Messagerie",
-          "items": ["Docker", "Kafka", "RabbitMQ", "Nginx", "Gunicorn", "Traefik", "Kubernetes", "Azure", "AWS"]
+          "name": "Auth & Sécurité API",
+          "items": ["OAuth2", "OpenID Connect (OIDC)", "JWT", "Rate Limiting", "Keycloak", "Okta", "Auth0"]
         },
         {
-          "name": "Architecture & Méthodologies",
-          "items": ["Clean Architecture", "Hexagonal", "Microservices", "Event-Driven", "TDD", "DDD", "SOLID"]
-        },
-        {
-          "name": "Qualité de Code & Outils",
-          "items": ["pytest", "Ruff", "Mypy", "Bandit", "pre-commit", "uv", "pyenv", "Prefect", "Git"]
-        },
-        {
-          "name": "Auth & Sécurité",
-          "items": ["Keycloak", "Okta", "Auth0"]
-        },
-        {
-          "name": "Géospatial",
-          "items": ["GeoPandas", "Spatialite", "GIS", "FTTH / FTTE"]
+          "name": "Architecture & Pratiques",
+          "items": ["Microservices", "Clean Architecture", "Hexagonale", "Event-Driven", "DDD", "SOLID", "Design Patterns", "TDD"]
         }
       ]
     },
@@ -326,17 +314,17 @@
         },
         {
           "company": "Trans4Orient",
-          "domain": "Transport & Logistique",
+          "domain": "Traduction",
           "role": "Développeur Web Full-Stack",
           "period": "Jan. 2016 – Oct. 2017",
           "location": "Marrakech, Maroc",
           "bullets": [
-            "Développement Full-stack de l'ERP Twork (Django/Python) : gestion de projets de traduction",
-            "Envoi asynchrone en masse d'e-mails aux sous-traitants via tâche Celery",
-            "Tâche Celery périodique : calcul de disponibilité des ressources et notifications aux chefs de projet",
-            "Développement du module Facturation et du Dashboard de reporting",
-            "Plateforme d'accès sous-traitants : espace connecté avec gestion de compte",
-            "Tests unitaires et fonctionnels ; gestion des serveurs Linux/Windows"
+            "Développement de l'ERP Twork (Django/Python) : plateforme intégrée couvrant gestion de projets, RH et comptabilité pour une société de traduction",
+            "Analyse du domaine, documentation technique et planification du développement et déploiement (méthodologie Agile)",
+            "Envoi asynchrone en masse d'e-mails de proposition de tâches aux sous-traitants via tâche Celery",
+            "Tâche Celery périodique : calcul de disponibilité des ressources internes et notifications aux chefs de projet",
+            "Développement de la plateforme sous-traitants : espace connecté avec gestion de compte",
+            "Développement du module Facturation et du Dashboard de reporting"
           ],
           "stack": ["Python", "Django", "Celery", "MySQL", "JavaScript", "jQuery", "Ajax", "Bootstrap"]
         }
@@ -350,6 +338,18 @@
           "school": "Faculté des Sciences et Techniques Gueliz",
           "location": "Marrakech, Maroc",
           "years": "2012 – 2015"
+        },
+        {
+          "degree": "DEUG — Mathématiques Appliquées",
+          "school": "Faculté des Sciences, Université Ibn Zohr",
+          "location": "Agadir, Maroc",
+          "years": "2010 – 2012"
+        },
+        {
+          "degree": "Baccalauréat — Mathématiques Appliquées",
+          "school": "Lycée El Massira El Khadra",
+          "location": "Tiznit, Maroc",
+          "years": null
         }
       ]
     },
