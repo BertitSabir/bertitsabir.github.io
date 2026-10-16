@@ -1,0 +1,400 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<title>Sabir BERTIT — CV</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:ital,wght@0,400;0,500;0,700;1,400&family=Ubuntu:wght@700&display=block" rel="stylesheet">
+<style>
+  /* Replica of the former Canva CV. All measures in pt, taken from the original PDF. */
+  @page { size: A4; margin: 0; }
+  :root {
+    --green: #215d40;
+    --muted: #789c8b;
+    --light: #c7e6b6;
+    --grey: #6f6f6f;
+    --contact: #656565;
+  }
+  * { box-sizing: border-box; margin: 0; padding: 0; }
+  html, body { background: #fff; }
+  body {
+    font-family: Inter, sans-serif;
+    color: #000;
+    -webkit-print-color-adjust: exact;
+    print-color-adjust: exact;
+  }
+  ul { list-style: none; }
+  b { font-weight: 700; }
+
+  .page {
+    position: relative;
+    width: 595.28pt;
+    height: 841.89pt;
+    overflow: hidden;
+    break-after: page;
+  }
+  .page:last-child { break-after: auto; }
+
+  /* ── Header ── */
+  .header {
+    position: absolute; inset: 0 0 auto 0; height: 130pt;
+    border-bottom: 1.5pt solid var(--light);
+  }
+  .photo {
+    position: absolute; left: 18.7pt; top: 21.4pt; width: 37pt; height: 37pt;
+    border-radius: 50%; background: #dedede; overflow: hidden;
+  }
+  .photo img { width: 100%; height: 100%; display: block; }
+  .name {
+    position: absolute; left: 63pt; top: 34pt;
+    font-size: 12pt; font-weight: 700; color: var(--green);
+  }
+  .headline {
+    position: absolute; left: 150pt; top: 31pt; height: 19pt; padding: 0 8pt;
+    border-radius: 9.5pt; background: var(--green); color: #fff;
+    font: 700 10pt/19pt Ubuntu, sans-serif; letter-spacing: 0.75pt;
+  }
+  .summary {
+    position: absolute; left: 17pt; top: 64pt; width: 416pt;
+    font-size: 9pt; line-height: 10.6pt; color: var(--grey);
+  }
+  .contact { position: absolute; left: 461pt; top: 23pt; }
+  .contact dt { font-size: 11pt; color: var(--green); }
+  .contact dd { font-size: 10pt; color: var(--contact); margin: 1.5pt 0 3.5pt; }
+
+  /* ── Sidebar ── */
+  .sidebar {
+    position: absolute; left: 0; top: 130pt; bottom: 0; width: 178.75pt;
+    border-right: 1.5pt solid var(--light);
+  }
+  .page:not(:first-child) .sidebar { top: 0; }
+  .sidebar h2 { font-size: 12pt; font-weight: 700; margin: 15pt 0 0 12pt; }
+  .skills { margin: 8pt 0 0 0; }
+  .skills > li {
+    position: relative; padding-left: 20pt;
+    font-size: 9pt; font-weight: 700; color: var(--green); line-height: 10.7pt;
+  }
+  .skills > li::before {
+    content: ""; position: absolute; left: 10pt; top: 4pt;
+    width: 3pt; height: 3pt; border-radius: 50%; background: var(--green);
+  }
+  .skills ul { width: 150pt; }
+  .skills ul li {
+    position: relative; padding-left: 12pt;
+    font-size: 8pt; font-weight: 400; color: #000; line-height: 10.7pt;
+  }
+  .skills ul li::before {
+    content: ""; position: absolute; left: 2pt; top: 3.6pt;
+    width: 3pt; height: 3pt; border-radius: 50%; border: 0.67pt solid #000;
+  }
+  .extras { position: absolute; left: 13pt; top: 367pt; }
+  .extras h2 { margin: 0 0 6pt 0; }
+  .extras ul { margin-bottom: 14pt; }
+  .extras ul li {
+    position: relative; padding-left: 14pt; font-size: 8pt; line-height: 11pt;
+  }
+  .extras ul li::before {
+    content: ""; position: absolute; left: 6pt; top: 4pt;
+    width: 2.5pt; height: 2.5pt; border-radius: 50%; background: #000;
+  }
+  .extras p { font-size: 8pt; font-style: italic; padding-left: 6pt; }
+
+  /* ── Main column ── */
+  .main { position: absolute; left: 178pt; right: 0; top: 130pt; bottom: 0; }
+  .page:not(:first-child) .main { top: 0; }
+
+  .sec-head { position: relative; height: 37pt; }
+  .sec-head h2 { position: absolute; left: 87pt; top: 8.5pt; font-size: 12pt; font-weight: 700; }
+  .sec-head svg { position: absolute; left: 0; top: 0; overflow: visible; }
+
+  /* Timeline: vertical rule + hollow dots */
+  .timeline { position: relative; padding: 0 12.5pt 0 22pt; }
+  .timeline::before {
+    content: ""; position: absolute; left: 9.25pt; top: -14pt; bottom: 0;
+    border-left: 1.5pt solid var(--green);
+  }
+  .dot::before {
+    content: ""; position: absolute; left: -15pt; top: var(--dot, 6pt);
+    width: 4.5pt; height: 4.5pt; border-radius: 50%;
+    border: 1.5pt solid var(--green); background: #fff;
+  }
+
+  /* Formations */
+  .formations { height: 149pt; border-bottom: 1.5pt solid var(--light); }
+  .formations .timeline { margin-top: -7pt; }
+  .formations .timeline::before { top: -7pt; bottom: 30pt; }
+  .edu { position: relative; height: 36pt; --dot: 8pt; }
+  .edu-degree { font-size: 10pt; font-weight: 500; }
+  .edu-row { display: flex; align-items: baseline; }
+  .edu-school { font-size: 9pt; color: var(--muted); width: 191pt; }
+  .edu-years { font-size: 10pt; color: var(--muted); }
+  .edu-city { font-size: 9pt; margin-left: auto; }
+
+  /* Experiences */
+  /* The timeline continues across pages: page 1 runs to the bottom edge, page 2 starts at the top edge. */
+  .page:first-child .experiences .timeline::before { bottom: -400pt; }
+  .page:not(:first-child) .timeline::before { top: -16pt; }
+  .page:not(:first-child) .experiences { padding-top: 16pt; }
+  .page:not(:first-child) .timeline.ends::before { bottom: auto; height: var(--end); }
+
+  .job { position: relative; margin-bottom: 20pt; }
+  .job-head { display: flex; align-items: flex-start; }
+  .company { font-size: 12pt; font-weight: 500; white-space: nowrap; }
+  .domains { display: flex; gap: 2pt; margin: 2pt 0 0 4pt; }
+  .domains span {
+    height: 13pt; padding: 0 4pt; border-radius: 6.5pt;
+    background: var(--green); color: #fff; font-size: 7pt; line-height: 13pt; white-space: nowrap;
+  }
+  .location { margin: 0 12pt 0 auto; text-align: right; font-size: 10pt; line-height: 12pt; }
+  .job-sub { display: flex; align-items: center; margin-top: -7pt; }
+  .period { width: 90pt; font-size: 9pt; color: var(--muted); }
+  .role {
+    height: 17pt; padding: 0 6pt; border-radius: 8.5pt; background: var(--light);
+    font-size: 9pt; font-style: italic; line-height: 17pt;
+  }
+  .bullets { margin-top: 4pt; padding-left: 13pt; }
+  .bullets li { position: relative; font-size: 8pt; line-height: 9.35pt; }
+  .bullets li::before {
+    content: ""; position: absolute; left: -9.5pt; top: 3.6pt;
+    width: 2.5pt; height: 2.5pt; border-radius: 50%; background: #000;
+  }
+  .stack { margin-top: 7.5pt; font-size: 7pt; line-height: 8.6pt; color: var(--muted); }
+</style>
+</head>
+<body>
+
+<!-- ════════════════════ PAGE 1 ════════════════════ -->
+<section class="page">
+  <header class="header">
+    <div class="photo"><img src="photo.png" alt=""></div>
+    <div class="name">Sabir BERTIT</div>
+    <div class="headline">Senior Python Backend Engineer</div>
+    <p class="summary">As a passionate Python developer, I specialize in designing web applications with a strong focus on maintainability, scalability, testability, and clear separation of concerns. I am committed to building robust, reliable software that is easy to evolve and supports long-term growth.</p>
+    <dl class="contact">
+      <dt>Phone</dt><dd>+33 751 543 929</dd>
+      <dt>E-mail</dt><dd>sabir-bertit@hotmail.fr</dd>
+      <dt>Address</dt><dd>Nanterre, FR</dd>
+    </dl>
+  </header>
+
+  <aside class="sidebar">
+    <h2>Compétences Techniques</h2>
+    <ul class="skills">
+      <li>Python &amp; Backend
+        <ul><li>Python</li><li>FastAPI</li><li>Django</li><li>Django REST Framework</li><li>Flask</li><li>SQLAlchemy</li><li>SQLModel</li><li>Alembic</li><li>Celery</li><li>Faust-streaming</li><li>Pandas</li><li>GeoPandas</li><li>Numpy</li><li>REST API</li></ul>
+      </li>
+      <li>Data &amp; Storage
+        <ul><li>Databases: PostgreSQL, MySQL, Oracle, Redis</li><li>Storage: S3, MinIO</li></ul>
+      </li>
+      <li>Tools
+        <ul><li>VCS : Git</li><li>Static Analysis : ruff, mypy, bandit, isort, black, pre-commit.</li><li>Dependency &amp; Environment Management: uv, pyenv, pipx, poetry</li></ul>
+      </li>
+      <li>Infrastructure &amp; CI/CD
+        <ul><li>Containerization : Docker, Podman</li><li>Web server : Gunicorn, Nginx</li><li>Brokers de Messages : Kafka, RabbitMQ</li><li>AuthN/AuthZ : Keycloak, Okta, Auth0</li><li>Reverse proxies : Traefik, Nginx</li><li>CI/CD: Github, Gitlab, Azure Devops</li><li>Cloud: AWS, Azure</li></ul>
+      </li>
+      <li>Orchestration &amp; Automatisation
+        <ul><li>Prefect</li><li>Celery</li><li>BPMN</li></ul>
+      </li>
+      <li>Architecture &amp; Code structures
+        <ul><li>MVC/MVT</li><li>Clean and Hexagonal Architectures</li><li>Microservices</li><li>Event-Driven</li><li>Test-Driven Development (TDD)</li><li>Domain-Driven Design (DDD)</li></ul>
+      </li>
+      <li>Tests et Qualité
+        <ul><li>Packages: pytest, unittest</li><li>Tests: Unit tests, Integration, E2E</li></ul>
+      </li>
+      <li>Profiling
+        <ul><li>Scalene</li><li>cProfile</li><li>Pyinstrument</li></ul>
+      </li>
+      <li>Agile Methodologies
+        <ul><li>Agile</li><li>Scrum</li><li>Kanban</li></ul>
+      </li>
+    </ul>
+  </aside>
+
+  <main class="main">
+    <section class="formations">
+      <div class="sec-head">
+        <svg width="80" height="40" viewBox="0 0 80 40" style="width:80pt;height:40pt">
+          <path d="M10 44 V22 Q10 16 16 16 H76 M72.5 12.5 L76 16 L72.5 19.5" fill="none" stroke="#215d40" stroke-width="1.5"/>
+        </svg>
+        <h2>Formations</h2>
+      </div>
+      <div class="timeline">
+        <article class="edu dot">
+          <div class="edu-degree">Engineering Degree — Computer Science &amp; Software Development</div>
+          <div class="edu-row"><span class="edu-school">Faculté des Sciences et Techniques Gueliz</span><span class="edu-years">2012 - 2015</span><span class="edu-city">Marrakech, Morocco</span></div>
+        </article>
+        <article class="edu dot">
+          <div class="edu-degree">DEUG — Applied Mathematics</div>
+          <div class="edu-row"><span class="edu-school">Faculté des Sciences, Université Ibn Zohr</span><span class="edu-years">2010 - 2012</span><span class="edu-city">Agadir, Morocco</span></div>
+        </article>
+        <article class="edu dot">
+          <div class="edu-degree">Baccalauréat — Applied Mathematics</div>
+          <div class="edu-row"><span class="edu-school">Lycée El Massira El Khadra</span><span class="edu-years">2010 - 2012</span><span class="edu-city">Tiznit, Morocco</span></div>
+        </article>
+      </div>
+    </section>
+
+    <section class="experiences">
+      <div class="sec-head">
+        <svg width="80" height="40" viewBox="0 0 80 40" style="width:80pt;height:40pt">
+          <path d="M10 44 V23 Q10 17 16 17 H75 M71.5 13.5 L75 17 L71.5 20.5" fill="none" stroke="#215d40" stroke-width="1.5"/>
+        </svg>
+        <h2>Expériences professionnelles</h2>
+      </div>
+      <div class="timeline">
+
+        <article class="job dot">
+          <div class="job-head">
+            <span class="company">FNCCR — ACTEE</span>
+            <span class="domains"><span>Public Sector</span><span>Energy</span></span>
+            <span class="location">Paris<br>France</span>
+          </div>
+          <div class="job-sub"><span class="period">05/2026 - Present</span><span class="role">Senior Python Backend Engineer</span></div>
+          <ul class="bullets">
+            <li><b>Laureat V2 platform:</b> Develop the FastAPI backend that local authorities funded by the ACTEE programme use to manage their energy-renovation projects (folders, actions, agents, indicators), with role-based permissions.</li>
+            <li><b>Integrations &amp; rules engine:</b> Implemented ProConnect authentication (public-sector OIDC SSO) end to end; integrated the IPPER buildings repository (Redis cache, immutable site snapshots); server-side JSONLogic rules for dynamic forms.</li>
+            <li><b>Performance &amp; quality:</b> Faster search with PostgreSQL pg_trgm indexes; ports-and-adapters refactoring roadmap enforced in CI (import-linter); QA non-regression suite gating merges.</li>
+          </ul>
+          <p class="stack">Hexagonal Architecture; Python; FastAPI; SQLModel; Alembic; PostgreSQL; Redis; S3; OIDC (ProConnect); JSONLogic; Angular; Docker; Scalingo; GitHub Actions; uv; Ruff; Playwright.</p>
+        </article>
+
+        <article class="job dot">
+          <div class="job-head">
+            <span class="company">Direct Assurance</span>
+            <span class="domains"><span>Insurance</span></span>
+            <span class="location">Suresnes<br>France</span>
+          </div>
+          <div class="job-sub"><span class="period">09/2025 - 04/2026</span><span class="role">Senior Software Engineer</span></div>
+          <ul class="bullets">
+            <li><b>Backend Development &amp; Maintenance:</b> Implemented new features in existing microservices (Auto, Health, Home insurance); contributed to the evolution and optimization of REST APIs exposing pricing services.</li>
+            <li><b>Quality &amp; Performance:</b> Set up and maintained automated tests (unit, integration, load); ensured code robustness, security, and maintainability; contributed to continuous improvement (code reviews, documentation).</li>
+            <li><b>Collaboration &amp; Support:</b> Worked closely with actuarial, QA, and DevOps teams; identified, analyzed, and fixed bugs and performance issues.</li>
+          </ul>
+          <p class="stack">Microservices; Graph theory; Python; FastAPI; Ruff; uv; Pre-commit; Azure DevOps; Databricks; Docker; Podman; Azure Cloud; Concurrency; Profiling.</p>
+        </article>
+
+        <article class="job dot">
+          <div class="job-head">
+            <span class="company">Axione</span>
+            <span class="domains"><span>FTTH</span><span>FTTE</span><span>Geo Data</span><span>GIS</span></span>
+            <span class="location">Malakoff<br>France</span>
+          </div>
+          <div class="job-sub"><span class="period">07/2022 - 06/2025</span><span class="role">Backend Developer</span></div>
+          <ul class="bullets">
+            <li><b>Contributed to delivering applications from scratch</b>, actively involved in all phases of the SDLC (planning, analysis, design, implementation, testing, deployment, maintenance).</li>
+            <li>Set up an automated file transfer solution between NAS and FTP server via an event-driven architecture (Kafka), including MFT orchestration and client notifications.</li>
+            <li><b>Automated GRACE THD V3 file processing:</b> built a FastAPI, orchestrated via Prefect, handled geospatial data with Pandas/GeoPandas, generated optical network components (OSP, ISP, Splices), stored on S3.</li>
+            <li><b>Developed a geospatial ETL application:</b> synchronized data from multiple Oracle databases to a central DB using parallel processing (Multiprocessing/Multithreading), Redis caching, and dynamic projection detection.</li>
+            <li><b>Best practices:</b> Hexagonal &amp; Clean Architecture, SOLID principles, multi-team dev standards, pre-commit hooks (Ruff, Mypy, Bandit, PyUpgrade, GitLeaks), modern tooling (uv, pyenv, pipx).</li>
+          </ul>
+          <p class="stack">Architectures: Hexagonal and Clean; Python 2 and 3; SQL; Ruff; UV; Pyenv; Pipx; Pre-commit; Mypy; Bandit; Isort; Object Storage (MFT, S3, MinIO); Kafka; BDDR (MySQL, SQLite, PostgreSQL); Redis; Keycloak; Traefik; Docker; Django; DRF; FastAPI; Concurrency; Parallelism, Faust; GitLab; Ubuntu; Fedora; MacOS.</p>
+        </article>
+
+      </div>
+    </section>
+  </main>
+</section>
+
+<!-- ════════════════════ PAGE 2 ════════════════════ -->
+<section class="page">
+  <aside class="sidebar">
+    <div class="extras">
+      <h2>Interests</h2>
+      <ul><li>Sport</li><li>Tech Enthusiast</li><li>Eternal Explorer</li><li>Cinema &amp; Anime Fan</li></ul>
+      <h2>Langues</h2>
+      <p>English, French, Amazigh, Arabic</p>
+    </div>
+  </aside>
+
+  <main class="main">
+    <section class="experiences">
+      <div class="timeline ends">
+
+        <article class="job dot">
+          <div class="job-head">
+            <span class="company">Baracoda</span>
+            <span class="domains"><span>Health</span><span>IoT</span></span>
+            <span class="location">Neuilly-sur-Seine<br>France</span>
+          </div>
+          <div class="job-sub"><span class="period">03/2022 - 07/2022</span><span class="role">Backend Developer</span></div>
+          <ul class="bullets">
+            <li>Developed BLE/Wi-Fi communication modules between medical IoT devices and mobile app (Python, MQTT)</li>
+            <li>Integrated REST APIs to sync medical data with cloud health platforms</li>
+            <li>Built a Django REST API for patient health data management and tracking</li>
+            <li>Migrated ORM layer from Django ORM to SQLAlchemy / Alembic</li>
+            <li>Defined API contracts for inter-service interoperability and data consistency</li>
+            <li>Unit and integration tests (pytest); code reviews with SOLID and Clean Code practices</li>
+          </ul>
+          <p class="stack">MVT; Python 3.6; AWS; Alibaba; Kubernetes; Django; DRF; GitHub; Pylint; Bandit; Isort; Black; Asyncio; Redis; SQL; PostgreSQL; FastAPI.</p>
+        </article>
+
+        <article class="job dot">
+          <div class="job-head">
+            <span class="company">Chronopost</span>
+            <span class="domains"><span>Express Delivery</span><span>Logistics</span></span>
+            <span class="location">Paris<br>France</span>
+          </div>
+          <div class="job-sub"><span class="period">06/2019 - 12/2021</span><span class="role">Backend Developer</span></div>
+          <ul class="bullets">
+            <li>Developed and maintained TETHYS, Chronopost's customs clearance tool (Django, DRF)</li>
+            <li>Analysed parcel lifecycle business rules and reverse-engineered the legacy application</li>
+            <li>Built the return processing workflow and communication modules with French Customs</li>
+            <li>Asynchronous communication with French Customs via Celery / RabbitMQ (file exchanges)</li>
+            <li>Dockerized the project; managed staging and production deployments with Git Flow versioning</li>
+            <li>Unit tests in development; functional tests on dev and staging servers</li>
+          </ul>
+          <p class="stack">Django; DRF; Celery; Python 3; SQL; PostgreSQL; Nginx; Gunicorn; Redis; RabbitMQ; Docker; Git Flow; Supervisor; Ubuntu; Windows.</p>
+        </article>
+
+        <article class="job dot">
+          <div class="job-head">
+            <span class="company">Conexcap Technologies</span>
+            <span class="domains"><span>Finance</span></span>
+            <span class="location">Marrakech<br>Morocco</span>
+          </div>
+          <div class="job-sub"><span class="period">10/2017 - 04/2019</span><span class="role">Full Stack Developer</span></div>
+          <ul class="bullets">
+            <li>Analysed multi-platform authentication systems and SSO architecture for the 570 EASI group</li>
+            <li>Secured communications and centralized/synchronized the shared database</li>
+            <li>Built REST APIs for the FairInvest SCPI platform (real estate investment subscription)</li>
+            <li>Integrated forms, validations and client document management</li>
+            <li>Celery task + Django Signals: computed and updated client document JSON in server cache</li>
+            <li>Unit and functional tests across both projects; mentored junior developers</li>
+            <li>Docker deployments; Nginx and Jenkins CI configuration</li>
+          </ul>
+          <p class="stack">Django; Django Rest Framework; Laravel; python; Javascript; Jquery; Bootstrap; Html; Css; MySQL; Nginx; Gunicorn; Jenkins; Docker; Ubuntu Server; MacOS.</p>
+        </article>
+
+        <article class="job dot">
+          <div class="job-head">
+            <span class="company">Trans4orient</span>
+            <span class="domains"><span>Translation</span></span>
+            <span class="location">Marrakech<br>Morocco</span>
+          </div>
+          <div class="job-sub"><span class="period">01/2016 - 10/2017</span><span class="role">Full Stack Developer</span></div>
+          <ul class="bullets">
+            <li>Built Twork ERP (Django/Python): integrated platform covering project management, HR and billing for a translation company</li>
+            <li>Domain analysis, technical documentation and development/deployment planning following Agile methodology</li>
+            <li>Asynchronous mass email sending to subcontractors for task proposals via Celery</li>
+            <li>Periodic Celery task: computed internal resource availability and notified project managers</li>
+            <li>Built subcontractor portal with connected workspace and account management</li>
+            <li>Billing module and activity reporting dashboard</li>
+          </ul>
+          <p class="stack">Django; Python 2 et 3; Pascal; Javascript; Jquery; Ajax; Html; Css; Bootstrap; MySQL; Apache; Ubuntu; Windows.</p>
+        </article>
+
+      </div>
+    </section>
+  </main>
+</section>
+
+<script>
+  // Page 2: stop the timeline rule at the last dot instead of running to the page bottom.
+  document.querySelectorAll('.timeline.ends').forEach(tl => {
+    const last = tl.querySelector('.job:last-of-type');
+    tl.style.setProperty('--end', (last.offsetTop + 8 + 21) + 'px');
+  });
+</script>
+</body>
+</html>

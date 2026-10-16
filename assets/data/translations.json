@@ -37,17 +37,35 @@
       "title": "Experience",
       "items": [
         {
+          "company": "FNCCR — ACTEE",
+          "domain": "Public Sector · Energy",
+          "role": "Senior Python Backend Engineer",
+          "period": "May 2026 – Present",
+          "location": "Paris, France",
+          "context": "Laureat V2 — the platform local authorities funded by the ACTEE programme use to manage their energy-renovation projects",
+          "bullets": [
+            "Developing the FastAPI backend: folders, actions, agents and indicators, with role-based permissions and visibility rules",
+            "Implemented ProConnect authentication end to end (French public-sector OIDC SSO): adapter, identity linking, login journey",
+            "Integrated the IPPER buildings repository: read-only proxy, Redis caching and immutable site snapshots",
+            "Server-side JSONLogic rules engine for dynamic forms and automatic status computation; multi-file uploads to S3",
+            "Optimized search with PostgreSQL pg_trgm indexes and removed costly cartesian-product counts",
+            "Wrote the ports-and-adapters refactoring roadmap and enforced its import contracts in CI with import-linter",
+            "Set up a QA non-regression suite gating merges; Scalingo deployments with automatic migrations and review apps"
+          ],
+          "stack": ["Python", "FastAPI", "SQLModel", "Alembic", "PostgreSQL", "Redis", "S3", "OIDC", "JSONLogic", "Angular", "Docker", "Scalingo", "GitHub Actions"]
+        },
+        {
           "company": "Direct Assurance",
           "domain": "Insurance",
           "role": "Senior Software Engineer",
-          "period": "Sep 2025 – Present",
+          "period": "Sep 2025 – Apr 2026",
           "location": "Suresnes, France",
           "bullets": [
-            "Implementing new features across microservices (Auto, Health and Home insurance)",
-            "Evolving and optimizing REST APIs exposing pricing services",
-            "Setting up and maintaining automated tests (unit, integration, load)",
-            "Ensuring code robustness, security and maintainability",
-            "Close collaboration with actuarial, QA and DevOps teams — bug analysis and performance fixes",
+            "Implemented new features across microservices (Auto, Health and Home insurance)",
+            "Evolved and optimized REST APIs exposing pricing services",
+            "Set up and maintained automated tests (unit, integration, load)",
+            "Ensured code robustness, security and maintainability",
+            "Worked closely with actuarial, QA and DevOps teams — bug analysis and performance fixes",
             "Python performance profiling (cProfile, yappi) and OpenTelemetry instrumentation"
           ],
           "stack": ["Python", "FastAPI", "Microservices", "Azure", "Databricks", "Docker", "Podman", "Asyncio", "Ruff", "uv", "Azure DevOps"]
@@ -232,10 +250,28 @@
       "title": "Expériences",
       "items": [
         {
+          "company": "FNCCR — ACTEE",
+          "domain": "Secteur public · Énergie",
+          "role": "Ingénieur Backend Python Senior",
+          "period": "Mai 2026 – Présent",
+          "location": "Paris, France",
+          "context": "Lauréat V2 — la plateforme sur laquelle les collectivités financées par le programme ACTEE pilotent leurs projets de rénovation énergétique",
+          "bullets": [
+            "Développement du backend FastAPI : dossiers, actions, agents et indicateurs, avec permissions par rôle et règles de visibilité",
+            "Authentification ProConnect de bout en bout (SSO OIDC des agents publics) : adaptateur, rattachement des identités, parcours de connexion",
+            "Intégration du référentiel de bâtiments IPPER : proxy en lecture seule, cache Redis et snapshots immuables des sites",
+            "Moteur de règles JSONLogic côté serveur pour les formulaires dynamiques et le calcul automatique des statuts ; upload multi-fichiers vers S3",
+            "Optimisation de la recherche avec des index PostgreSQL pg_trgm ; suppression de comptages coûteux en produit cartésien",
+            "Rédaction de la feuille de route du refactoring ports & adapters, avec contrats d'import vérifiés en CI (import-linter)",
+            "Mise en place d'une suite QA de non-régression bloquante avant merge ; déploiements Scalingo avec migrations automatiques et review apps"
+          ],
+          "stack": ["Python", "FastAPI", "SQLModel", "Alembic", "PostgreSQL", "Redis", "S3", "OIDC", "JSONLogic", "Angular", "Docker", "Scalingo", "GitHub Actions"]
+        },
+        {
           "company": "Direct Assurance",
           "domain": "Assurance",
           "role": "Ingénieur Logiciel Senior",
-          "period": "Sep 2025 – Présent",
+          "period": "Sep 2025 – Avr. 2026",
           "location": "Suresnes, France",
           "bullets": [
             "Implémentation de nouvelles fonctionnalités dans les microservices existants (Auto, Santé, Habitation)",
