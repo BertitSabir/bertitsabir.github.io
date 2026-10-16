@@ -6,7 +6,8 @@
       "education": "Education",
       "about": "About",
       "contact": "Contact",
-      "cv": "↓ CV"
+      "cv": "↓ CV",
+      "cvUrl": "/BERTIT-SABIR-CV.pdf"
     },
     "skills": {
       "title": "Skills",
@@ -42,15 +43,15 @@
           "role": "Senior Python Backend Engineer",
           "period": "May 2026 – Present",
           "location": "Paris, France",
-          "context": "Laureat V2 — the platform local authorities funded by the ACTEE programme use to manage their energy-renovation projects",
+          "context": "Lauréat V2, the platform French local authorities use to manage energy-renovation projects funded by ACTEE",
           "bullets": [
-            "Developing the FastAPI backend: folders, actions, agents and indicators, with role-based permissions and visibility rules",
-            "Implemented ProConnect authentication end to end (French public-sector OIDC SSO): adapter, identity linking, login journey",
-            "Integrated the IPPER buildings repository: read-only proxy, Redis caching and immutable site snapshots",
-            "Server-side JSONLogic rules engine for dynamic forms and automatic status computation; multi-file uploads to S3",
-            "Optimized search with PostgreSQL pg_trgm indexes and removed costly cartesian-product counts",
-            "Wrote the ports-and-adapters refactoring roadmap and enforced its import contracts in CI with import-linter",
-            "Set up a QA non-regression suite gating merges; Scalingo deployments with automatic migrations and review apps"
+            "Building the FastAPI backend: folders, actions, agents, indicators and access rights",
+            "Wired up ProConnect, the French State's OIDC sign-in for public-sector staff, from the first redirect to account linking",
+            "Connected IPPER, the buildings reference, behind a Redis cache",
+            "Server-side JSONLogic checks for dynamic forms and automatic statuses; multi-file uploads to S3",
+            "Sped up search with PostgreSQL trigram indexes and fixed counts that blew up on joins",
+            "Wrote the roadmap toward ports and adapters, with import rules enforced in CI",
+            "Set up a QA regression suite that must pass before any merge; Scalingo deploys with automatic migrations"
           ],
           "stack": ["Python", "FastAPI", "SQLModel", "Alembic", "PostgreSQL", "Redis", "S3", "OIDC", "JSONLogic", "Angular", "Docker", "Scalingo", "GitHub Actions"]
         },
@@ -219,7 +220,8 @@
       "education": "Formation",
       "about": "À Propos",
       "contact": "Contact",
-      "cv": "↓ CV"
+      "cv": "↓ CV",
+      "cvUrl": "/BERTIT-SABIR-CV-FR.pdf"
     },
     "skills": {
       "title": "Compétences",
@@ -255,15 +257,15 @@
           "role": "Ingénieur Backend Python Senior",
           "period": "Mai 2026 – Présent",
           "location": "Paris, France",
-          "context": "Lauréat V2 — la plateforme sur laquelle les collectivités financées par le programme ACTEE pilotent leurs projets de rénovation énergétique",
+          "context": "Lauréat V2, la plateforme sur laquelle les collectivités pilotent leurs projets de rénovation énergétique financés par ACTEE",
           "bullets": [
-            "Développement du backend FastAPI : dossiers, actions, agents et indicateurs, avec permissions par rôle et règles de visibilité",
-            "Authentification ProConnect de bout en bout (SSO OIDC des agents publics) : adaptateur, rattachement des identités, parcours de connexion",
-            "Intégration du référentiel de bâtiments IPPER : proxy en lecture seule, cache Redis et snapshots immuables des sites",
-            "Moteur de règles JSONLogic côté serveur pour les formulaires dynamiques et le calcul automatique des statuts ; upload multi-fichiers vers S3",
-            "Optimisation de la recherche avec des index PostgreSQL pg_trgm ; suppression de comptages coûteux en produit cartésien",
-            "Rédaction de la feuille de route du refactoring ports & adapters, avec contrats d'import vérifiés en CI (import-linter)",
-            "Mise en place d'une suite QA de non-régression bloquante avant merge ; déploiements Scalingo avec migrations automatiques et review apps"
+            "Développement du backend FastAPI : dossiers, actions, agents, indicateurs et droits d'accès",
+            "Connexion ProConnect (le login OIDC de l'État pour les agents publics), de la première redirection au rattachement des comptes",
+            "Intégration du référentiel de bâtiments IPPER derrière un cache Redis",
+            "Règles JSONLogic vérifiées côté serveur pour les formulaires dynamiques et les statuts automatiques ; upload multi-fichiers vers S3",
+            "Recherche accélérée par des index trigrammes PostgreSQL, et correction de comptages qui explosaient sur les jointures",
+            "Feuille de route vers une architecture ports & adapters, avec des règles d'import vérifiées en CI",
+            "Suite de non-régression QA obligatoire avant chaque merge ; déploiements Scalingo avec migrations automatiques"
           ],
           "stack": ["Python", "FastAPI", "SQLModel", "Alembic", "PostgreSQL", "Redis", "S3", "OIDC", "JSONLogic", "Angular", "Docker", "Scalingo", "GitHub Actions"]
         },

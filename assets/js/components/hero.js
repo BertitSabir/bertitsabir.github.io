@@ -24,7 +24,7 @@ class HeroComponent {
         </p>
         <div class="hero-actions">
           <a href="#experience" class="btn btn-primary">${i18n.currentLang === 'en' ? 'View Experience' : 'Voir Expérience'}</a>
-          <a href="/BERTIT-SABIR-CV.pdf" target="_blank" class="btn btn-outline">${i18n.currentLang === 'en' ? 'Download CV (PDF)' : 'Télécharger le CV (PDF)'}</a>
+          <a href="${i18n.get('nav.cvUrl')}" target="_blank" class="btn btn-outline">${i18n.currentLang === 'en' ? 'Download CV (PDF)' : 'Télécharger le CV (PDF)'}</a>
         </div>
       </header>
     `;

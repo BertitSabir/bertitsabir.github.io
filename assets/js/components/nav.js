@@ -32,7 +32,9 @@ class NavComponent {
       link.textContent = i18n.get(key);
     });
 
-    document.querySelector('.nav-cv').textContent = navData.cv || '↓ CV';
+    const cvLink = document.querySelector('.nav-cv');
+    cvLink.textContent = navData.cv || '↓ CV';
+    cvLink.href = navData.cvUrl || '/BERTIT-SABIR-CV.pdf';
     this.setupLanguageButtons();
   }
 }
